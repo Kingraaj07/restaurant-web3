@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banshisha - Authentic Indian Cuisine</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:title" content="Banshisha - Authentic Indian Cuisine">
+  <meta property="og:description"
+    content="Experience authentic Indian cuisine at Banshisha. Book your table for an unforgettable dining experience.">
+  <meta property="og:image" content="images/restaurant-preview.jpg">
+  <meta name="theme-color" content="#4A90E2">
+
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Banshisha - Authentic Indian Restaurant serving delicious cuisine. Book your table for breakfast, lunch, or dinner.">
+  <meta name="keywords" content="Indian restaurant, Indian cuisine, Banshisha, restaurant booking">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#home">
+          <img src="images/banshisa-logo.jpeg" alt="Banshisha Logo" width="150" height="50">
+        </a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Savor the Authentic Flavors of India's Finest Cuisine</h1>
+      <p>Immerse yourself in a culinary journey where traditional recipes meet modern excellence. Experience the perfect
+        blend of spices, aromas, and hospitality that has delighted over 100,000 guests worldwide.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="cta-button">Explore Our Menu</a>
+        <a href="#reservation" class="cta-button secondary">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="starters">Starters</button>
+      <button class="category-btn" data-category="mains">Main Course</button>
+      <button class="category-btn" data-category="breads">Breads</button>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-item" data-category="mains">
+        <img src="images/menu/shahi-paneer.webp" alt="Shahi Paneer" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Shahi Paneer</h3>
+          <p class="price">₹220</p>
+          <p>Paneer cubes cooked in a rich and creamy gravy made with cashew nuts and aromatic spices, delivering a
+            royal and indulgent flavor.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="mains">
+        <img src="biryani.jpg" alt="Veg Manchurian" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Veg Manchurian</h3>
+          <p class="price">₹160</p>
+          <p>Deep-fried vegetable balls tossed in a flavorful soy-based sauce, offering a fusion of textures and tastes.
+          </p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="starters">
+        <img src="./menu/images/paneer-tikka-dry.webp" alt="Paneer Tikka" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Paneer Tikka</h3>
+          <p class="price">₹210</p>
+          <p>Chunks of paneer marinated in spiced yogurt and grilled in a tandoor, resulting in a smoky and flavorful
+            appetizer.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="breads">
+        <img src="./menu/images/lacchha-paratha.webp" alt="Lacchha Paratha" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Lacchha Paratha</h3>
+          <p class="price">₹35</p>
+          <p>Layered whole wheat bread, flaky and crisp, offering delightful accompaniment to any dish.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="mains">
+        <img src="./menu/images/paneer-kofta.webp" alt="Paneer Kofta" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Paneer Kofta</h3>
+          <p class="price">₹260</p>
+          <p>Succulent paneer dumplings immersed in a rich and spicy gravy, offering a delectable indulgence.</p>
+        </div>
+      </div>
+      <div class="menu-item" data-category="mains">
+        <img src="./menu/images/Malai-Kofta.webp" alt="Malai Kofta" width="300" height="200" loading="lazy">
+        <div class="menu-content">
+          <h3>Malai Kofta</h3>
+          <p class="price">₹250</p>
+          <p>Soft dumplings made from paneer and potatoes, simmered in a luscious creamy gravy enriched with cashew nuts
+            and aromatic spices.</p>
+        </div>
+      </div>
+    </div>
+    <a href="menu/index.html" class="cta-button view-menu-btn">View Full Menu</a>
+  </section>
+
+
+  <section class="features">
+    <h2>What makes us special?</h2>
+    <p class="features-intro">We are a family-owned restaurant that has been serving authentic Indian cuisine for over
+      20 years. We use only
+      the freshest ingredients and traditional recipes to create a unique and delicious dining experience.</p>
+    <div class="features-grid">
+      <div class="feature-item">
+        <i class="fas fa-leaf"></i>
+        <h3>Exquisite Vegetarian Cuisine</h3>
+        <p>Indulge in our diverse selection of vegetarian dishes, each thoughtfully prepared with the freshest,
+          high-quality ingredients to ensure a delightful dining experience.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-carrot"></i>
+        <h3>Freshness Guaranteed</h3>
+        <p>At Banshisha, we are dedicated to serving freshly prepared meals daily, upholding our commitment to quality
+          and
+          taste in every bite.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-award"></i>
+        <h3>Culinary Excellence</h3>
+        <p>Our team of esteemed chefs brings exceptional skill and creativity to the table, crafting dishes that are as
+          visually appealing as they are delicious.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="images/breakfast.webp" alt="Delicious breakfast spread including South Indian dishes" loading="lazy">
+        <div class="service-content">
+          <h3>Breakfast</h3>
+          <p>Start your day with our delightful breakfast offerings, featuring a variety of freshly prepared dishes to
+            energize your morning.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="images/lunch.webp" alt="Authentic Indian thali for lunch" loading="lazy">
+        <div class="service-content">
+          <h3>Lunch</h3>
+          <p>Take a midday break and savor our satisfying lunch options, crafted to provide a perfect blend of flavor
+            and nourishment.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="images/dinner.webp" alt="Elegant dinner setup with various Indian dishes" loading="lazy">
+        <div class="service-content">
+          <h3>Dinner</h3>
+          <p>Unwind in the evening with our delectable dinner selections, thoughtfully curated to offer a memorable
+            dining experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="facilities-section">
+    <h2>Hotel Facilities</h2>
+    <div class="hotel-gallery">
+      <div class="gallery-item">
+        <img src="./menu/images/hotel-room-narrow.webp" alt="Luxurious hotel room with modern amenities" loading="lazy">
+        <div class="gallery-caption">Deluxe Room</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./menu/images/hotel-room.webp" alt="Elegant hotel lobby with comfortable seating" loading="lazy">
+        <div class="gallery-caption">Hotel Lobby</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./menu/images/hotel-room-short.webp" alt="Restaurant dining area with traditional décor"
+          loading="lazy">
+        <div class="gallery-caption">Dining Area</div>
+      </div>
+    </div>
+    <p class="facilities-description">Experience comfort and convenience at our hotel facilities. Our well-appointed
+      rooms and exceptional amenities
+      are designed to provide a relaxing stay for our guests. Whether you're here for a short visit or an extended stay,
+      we ensure a hospitable environment that complements your dining experience.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+        <p class="quote">"The best Indian food I've ever had! The flavors are authentic and service is
+          exceptional."</p>
+        <p class="author">- Sarah Johnson</p>
+      </div>
+      <div class="testimonial">
+        <div class="rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+        <p class="quote">"Amazing ambiance and delicious food. The Butter Chicken is a must-try!"</p>
+        <p class="author">- Rahul Sharma</p>
+      </div>
+      <div class="testimonial">
+        <div class="rating" aria-label="5 out of 5 stars rating">★★★★★</div>
+        <p class="quote">"Perfect place for family dining. Great variety and excellent service."</p>
+        <p class="author">- Michael Chen</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="reservation-section">
+    <div class="container">
+      <h2>Make a Reservation</h2>
+      <p class="section-description">Plan your dining experience with us by making a reservation. Please provide the
+        following details:</p>
+      <form class="reservation-form" id="reservationForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Your Name*</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name"
+              pattern="[A-Za-z\s]{2,50}" autocomplete="name">
+            <span class="error-message" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter 10-digit number" pattern="[0-9]{10}">
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="date">Reservation Date*</label>
+            <input type="date" id="date" name="date" required min="">
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time*</label>
+            <select id="time" name="time" required>
+              <option value="">Select time</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="19:00">7:00 PM</option>
+              <option value="20:00">8:00 PM</option>
+              <option value="21:00">9:00 PM</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests*</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select number of guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+              <option value="6+">6+ People</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group full-width">
+            <label for="special-requests">Special Requests</label>
+            <textarea id="special-requests" name="special-requests" rows="3"
+              placeholder="Any dietary restrictions or special occasions?"></textarea>
+          </div>
+        </div>
+        <div class="form-privacy">
+          <input type="checkbox" id="privacy" name="privacy" required>
+          <label for="privacy">I agree to the <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms">Terms of
+              Service</a></label>
+          <span class="error-message"></span>
+        </div>
+        <button type="submit" class="submit-btn">Book Your Table</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Location</h3>
+        <p>123 Restaurant Street</p>
+        <p>City, State 12345</p>
+      </div>
+      <div class="footer-section">
+        <h3>Hours</h3>
+        <p>Monday - Friday: 11am - 10pm</p>
+        <p>Saturday - Sunday: 10am - 11pm</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@banshisha.com</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/banshisha" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com/banshisha" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Banshisha. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/sitemap">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <script></script>
+</body>
+
+</html>
